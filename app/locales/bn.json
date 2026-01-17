@@ -1,0 +1,56 @@
+{
+  "common": {
+    "home": "হোম",
+    "about": "আমাদের সম্পর্কে",
+    "history": "ইতিহাস",
+    "activities": "কার্যক্রম",
+    "gallery": "ফটো গ্যালারি",
+    "committee": "কমিটি",
+    "members": "সদস্য তালিকা",
+    "donation": "অনুদান",
+    "contact": "যোগাযোগ",
+    "faq": "সাধারণ জিজ্ঞাসা",
+    "news": "সাম্প্রতিক খবর",
+    "doner": "দাতা",
+    "swaronika": "স্বরণিকা",
+    "puja": "পূজা ও অঞ্জলি",
+    "advertises": "বিজ্ঞাপন",
+    "invitation": "নিমন্ত্রণ পত্র",
+    "expenditure": "ব্যয়",
+    "language": "ভাষা",
+    "search": "অনুসন্ধান",
+    "login": "লগইন",
+    "register": "নিবন্ধন"
+  },
+  "home": {
+    "hero_title": "বাংলাদেশের প্রিমিয়াম ইভেন্ট অর্গানাইজার",
+    "hero_subtitle": "পূজা, সাংস্কৃতিক অনুষ্ঠান এবং সামাজিক কার্যক্রম",
+    "cta_donate": "অনুদান দিন",
+    "cta_learn_more": "আরও জানুন"
+  },
+  "donation": {
+    "title": "অনুদান প্রদান করুন",
+    "subtitle": "বাংলাদেশ বা বিশ্বের যেকোনো প্রান্ত থেকে আমাদের অনুষ্ঠানে সহায়তা করুন",
+    "amount_label": "পরিমাণ নির্বাচন করুন",
+    "custom_amount": "অন্যান্য পরিমাণ",
+    "payment_methods": "পেমেন্ট পদ্ধতি",
+    "proceed": "পেমেন্টে এগিয়ে যান",
+    "supports_intl": "স্থানীয় এবং আন্তর্জাতিক কার্ড সমর্থিত"
+  },
+  "footer": {
+    "rights": "সর্বস্বত্ব সংরক্ষিত",
+    "quick_links": "দ্রুত লিংক",
+    "contact_us": "যোগাযোগ করুন",
+    "follow_us": "আমাদের অনুসরণ করুন"
+  },
+  "committee": {
+    "executive": "নির্বাহী কমিটি",
+    "sub_committee": "উপ-কমিটি",
+    "advisory": "উপদেষ্টা পরিষদ"
+  },
+  "doner": {
+    "gold": "gold সদস্য",
+    "silver": "silver সদস্য",
+    "bronze": "bronze সদস্য"
+  }
+}
