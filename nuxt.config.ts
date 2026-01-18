@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -8,16 +9,91 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
-    '@nuxtjs/i18n',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@formkit/auto-animate/nuxt',
+    '@nuxtjs/i18n'
   ],
 
-  // Tailwind CSS configuration - disable auto darkMode source
+  i18n: {
+    locales: [
+      { code: 'bn', language: 'bn-BD', name: 'বাংলা', file: 'bn.json' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' }
+    ],
+    defaultLocale: 'bn',
+    langDir: 'locales/',
+    strategy: 'prefix_except_default'
+  },
+
+  // Tailwind CSS configuration
   tailwindcss: {
+    viewer: true,
     exposeConfig: false,
-    injectPosition: 'first',
     config: {
-      darkMode: 'selector' // Use selector-based dark mode
+      content: [
+        "./app/**/*.{vue,js,ts}",
+        "./components/**/*.{vue,js,ts}",
+        "./layouts/**/*.vue",
+        "./pages/**/*.vue",
+        "./plugins/**/*.{js,ts}",
+        "./app.vue",
+        "./error.vue",
+      ],
+      theme: {
+        extend: {
+          colors: {
+            border: "hsl(var(--border))",
+            input: "hsl(var(--input))",
+            ring: "hsl(var(--ring))",
+            background: "hsl(var(--background))",
+            foreground: "hsl(var(--foreground))",
+            primary: {
+              DEFAULT: "hsl(var(--primary))",
+              foreground: "hsl(var(--primary-foreground))",
+            },
+            secondary: {
+              DEFAULT: "hsl(var(--secondary))",
+              foreground: "hsl(var(--secondary-foreground))",
+            },
+            destructive: {
+              DEFAULT: "hsl(var(--destructive))",
+              foreground: "hsl(var(--destructive-foreground))",
+            },
+            muted: {
+              DEFAULT: "hsl(var(--muted))",
+              foreground: "hsl(var(--muted-foreground))",
+            },
+            accent: {
+              DEFAULT: "hsl(var(--accent))",
+              foreground: "hsl(var(--accent-foreground))",
+            },
+            popover: {
+              DEFAULT: "hsl(var(--popover))",
+              foreground: "hsl(var(--popover-foreground))",
+            },
+            card: {
+              DEFAULT: "hsl(var(--card))",
+              foreground: "hsl(var(--card-foreground))",
+            },
+            // Cylon Heritage Custom Colors
+            'cylon-red': '#E11D48',
+            'gold': '#D4AF37',
+            'metallic': '#94A3B8',
+            'surface': '#1A1A1A',
+            'deep-black': '#0A0A0A',
+          },
+          borderRadius: {
+            lg: "var(--radius)",
+            md: "calc(var(--radius) - 2px)",
+            sm: "calc(var(--radius) - 4px)",
+          },
+          fontFamily: {
+            bangla: ['Tiro Bangla', 'Noto Sans Bengali', 'serif'],
+            'bangla-body': ['Noto Sans Bengali', 'sans-serif'],
+            sans: ['Inter', 'Noto Sans Bengali', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+     
     }
   },
 
@@ -38,17 +114,6 @@ export default defineNuxtConfig({
     preload: true
   },
 
-  // i18n - Bangla/English
-  i18n: {
-    locales: [
-      { code: 'bn', name: 'বাংলা', file: 'bn.json' },
-      { code: 'en', name: 'English', file: 'en.json' }
-    ],
-    defaultLocale: 'bn',
-    langDir: 'locales/',
-    strategy: 'prefix_except_default'
-  },
-
   // Image optimization
   image: {
     quality: 80,
@@ -66,7 +131,7 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: {
         lang: 'bn',
-        class: 'dark' // Default dark mode for Cylon theme
+        class: 'dark'
       }
     }
   }

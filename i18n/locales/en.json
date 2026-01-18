@@ -4,53 +4,19 @@
     "about": "About Us",
     "history": "History",
     "activities": "Activities",
-    "gallery": "Photo Gallery",
+    "gallery": "Gallery",
     "committee": "Committee",
-    "members": "Members List",
     "donation": "Donation",
-    "contact": "Contact",
-    "faq": "FAQ",
-    "news": "Recent News",
-    "doner": "Donors",
-    "swaronika": "Swaronika",
-    "puja": "Puja & Anjali",
-    "advertises": "Advertisements",
-    "invitation": "Invitation Card",
+    "contact": "Contact Us",
+    "members": "Members",
     "expenditure": "Expenditure",
-    "language": "Language",
-    "search": "Search",
-    "login": "Login",
-    "register": "Register"
+    "faq": "FAQ",
+    "news": "News"
   },
   "home": {
-    "hero_title": "Bangladesh's Premier Event Organizer",
-    "hero_subtitle": "Pujas, Cultural Events & Social Activities",
+    "hero_title": "Cinematic Event Management",
+    "hero_subtitle": "Experience the fusion of tradition and minimalism.",
     "cta_donate": "Donate Now",
     "cta_learn_more": "Learn More"
-  },
-  "donation": {
-    "title": "Make a Donation",
-    "subtitle": "Support our events from Bangladesh or anywhere in the world",
-    "amount_label": "Select Amount",
-    "custom_amount": "Other Amount",
-    "payment_methods": "Payment Methods",
-    "proceed": "Proceed to Payment",
-    "supports_intl": "Supports local & international cards"
-  },
-  "footer": {
-    "rights": "All Rights Reserved",
-    "quick_links": "Quick Links",
-    "contact_us": "Contact Us",
-    "follow_us": "Follow Us"
-  },
-  "committee": {
-    "executive": "Executive Committee",
-    "sub_committee": "Sub-Committee",
-    "advisory": "Advisory Board"
-  },
-  "doner": {
-    "gold": "Gold Member",
-    "silver": "Silver Member",
-    "bronze": "Bronze Member"
   }
 }
