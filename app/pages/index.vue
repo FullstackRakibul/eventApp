@@ -3,8 +3,8 @@ import { ArrowRight, Play, Users, Calendar, Heart, Shield, Globe, Award } from '
 
 const { t } = useI18n()
 
-// Vimeo cinematic background
-const videoUrl = 'https://player.vimeo.com/video/1139579428?api=1&background=1&autoplay=1&loop=1&byline=0&title=0'
+// YouTube cinematic background: acUEUxkJ5Gg
+const videoUrl = 'https://www.youtube.com/embed/acUEUxkJ5Gg?autoplay=1&mute=1&loop=1&playlist=acUEUxkJ5Gg&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&enablejsapi=1'
 
 const stats = computed(() => [
   { icon: Users, value: '500+', label: t('common.members') },
@@ -28,11 +28,13 @@ const quickLinks = [
       <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/20 to-background" />
       <div class="absolute inset-0 z-0 bg-black/40" />
 
-      <!-- Vimeo Video Background -->
+      <!-- YouTube Video Background -->
       <div class="absolute inset-0 z-[-1] pointer-events-none overflow-hidden scale-110">
         <iframe :src="videoUrl"
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77vh] min-w-full h-full min-h-[56.25vw] opacity-60 filter blur-[0.5px]"
-          frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77vh] min-w-full h-full min-h-[56.25vw] opacity-60 filter blur-[0.2px]"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
 
       <!-- Content -->
