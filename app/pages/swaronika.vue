@@ -15,7 +15,7 @@ const years = ['২০২৫', '২০২৪', '২০২৩', '২০২২', '
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div v-for="year in years" :key="year"
-          class="group glass-card p-1 rounded-3xl border-white/5 bg-surface/30 hover:border-cylon-red/30 transition-all duration-500">
+          class="group glass-card p-1 rounded-3xl border-border bg-card/30 hover:border-cylon-red/30 transition-all duration-500">
           <div
             class="aspect-[3/4] metallic-surface rounded-[1.4rem] flex flex-col items-center justify-center p-8 text-center relative overflow-hidden">
             <!-- Cylon Red Glow behind the year -->
@@ -23,13 +23,13 @@ const years = ['২০২৫', '২০২৪', '২০২৩', '২০২২', '
               class="absolute w-32 h-32 bg-cylon-red/10 blur-[60px] rounded-full group-hover:bg-cylon-red/20 transition-all duration-500" />
 
             <h3
-              class="text-6xl font-bold font-bangla mb-4 relative z-10 group-hover:scale-110 transition-transform duration-500">
+              class="text-6xl font-bold font-bangla mb-4 relative z-10 group-hover:scale-110 transition-transform duration-500 text-foreground">
               {{ year }}</h3>
             <p class="text-[10px] uppercase tracking-[0.4em] font-bold text-muted-foreground relative z-10">Digital
               Issue</p>
 
             <button
-              class="mt-12 px-8 py-3 bg-white/5 border border-white/10 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-cylon-red hover:border-cylon-red transition-all duration-500 relative z-10">
+              class="mt-12 px-8 py-3 bg-muted border border-border rounded-full text-xs uppercase tracking-widest font-bold hover:bg-cylon-red hover:text-white hover:border-cylon-red transition-all duration-500 relative z-10 text-foreground">
               View Archive
             </button>
           </div>

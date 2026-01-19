@@ -21,19 +21,19 @@ const expenses = [
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div
-          class="glass-card p-12 rounded-3xl border-white/5 metallic-surface flex flex-col justify-center items-center text-center">
+          class="glass-card p-12 rounded-3xl border-border metallic-surface flex flex-col justify-center items-center text-center">
           <h3 class="text-xs uppercase tracking-[0.4em] font-bold text-muted-foreground mb-4">Total Expenditure 2025
           </h3>
           <div class="text-6xl lg:text-8xl font-bold text-cylon-red tracking-tighter">৳১৭.০M</div>
-          <div class="mt-8 h-1 w-24 bg-white/10" />
+          <div class="mt-8 h-1 w-24 bg-border" />
           <p class="mt-8 text-muted-foreground font-bangla-body">সকল খরচ অডিটকৃত এবং অনুমোদিত।</p>
         </div>
 
         <div class="space-y-4">
           <div v-for="item in expenses" :key="item.item"
-            class="flex items-center justify-between p-6 glass-card rounded-2xl border-white/5 bg-surface/30 hover:bg-white/5 transition-colors">
-            <span class="font-bangla text-lg">{{ item.item }}</span>
-            <span class="font-bold text-white text-xl">{{ item.amount }}</span>
+            class="flex items-center justify-between p-6 glass-card rounded-2xl border-border bg-card/30 hover:bg-muted/5 transition-colors">
+            <span class="font-bangla text-lg text-foreground">{{ item.item }}</span>
+            <span class="font-bold text-foreground text-xl">{{ item.amount }}</span>
           </div>
         </div>
       </div>

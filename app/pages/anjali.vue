@@ -16,10 +16,10 @@ const { t } = useI18n()
 
       <div class="max-w-4xl mx-auto space-y-12">
         <div
-          class="glass-card p-12 rounded-[3rem] border-white/10 bg-surface/30 backdrop-blur-3xl text-center metallic-surface relative overflow-hidden">
+          class="glass-card p-12 rounded-[3rem] border-border bg-card/30 backdrop-blur-3xl text-center metallic-surface relative overflow-hidden">
           <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 bg-cylon-red/10 blur-[80px] rounded-full" />
           <h2 class="text-3xl font-bold font-bangla mb-10 text-cylon-red">পুষ্পাঞ্জলি মন্ত্র</h2>
-          <div class="space-y-8 font-bangla text-2xl leading-relaxed text-white/90 font-light">
+          <div class="space-y-8 font-bangla text-2xl leading-relaxed text-foreground/90 font-light">
             <p>ওঁ জয়ন্তী মঙ্গলা কালী ভদ্রকালী কপালিনী।</p>
             <p>দুর্গা শিবা ক্ষমা ধাত্রী স্বাহা স্বধা নমোহস্তু তে।।</p>
             <p>এষ স চন্দন পুষ্পবিল্বপত্রাঞ্জলি নমো ভগবত্যৈ দুর্গায়ৈ নমঃ।।</p>

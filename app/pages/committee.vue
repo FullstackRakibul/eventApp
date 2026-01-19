@@ -89,7 +89,7 @@ const getInitials = (name: string) => name.split(' ').map(n => n[0]).join('').to
         <div class="relative flex-1 max-w-md">
           <Search class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input v-model="searchQuery" placeholder="Search members..."
-            class="pl-10 h-12 bg-surface/50 border-border/10 focus:border-cylon-red/30 transition-all rounded-xl" />
+            class="pl-10 h-12 bg-muted/50 border-border focus:border-cylon-red/30 transition-all rounded-xl" />
         </div>
 
         <div class="flex flex-wrap gap-2">
@@ -112,7 +112,7 @@ const getInitials = (name: string) => name.split(' ').map(n => n[0]).join('').to
       <div v-auto-animate class="space-y-24">
         <div v-for="committee in filteredCommittees" :key="committee.id" class="animate-fade-in-up">
           <div class="flex items-center gap-4 mb-10">
-            <div class="w-12 h-12 rounded-xl bg-surface border border-cylon-red/20 flex items-center justify-center">
+            <div class="w-12 h-12 rounded-xl bg-card border border-cylon-red/20 flex items-center justify-center">
               <component :is="committee.icon" class="w-6 h-6 text-cylon-red" />
             </div>
             <div>
@@ -128,10 +128,10 @@ const getInitials = (name: string) => name.split(' ').map(n => n[0]).join('').to
                 class="glass-card hover:border-cylon-red/30 hover:translate-y-[-5px] transition-all duration-500 overflow-hidden">
                 <!-- Avatar -->
                 <div
-                  class="relative h-24 bg-gradient-to-br from-surface to-background flex items-center justify-center border-b border-border/5 overflow-hidden">
+                  class="relative h-24 bg-gradient-to-br from-muted to-background flex items-center justify-center border-b border-border overflow-hidden">
                   <div class="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity bg-cylon-red" />
                   <div
-                    class="w-14 h-14 rounded-full bg-background border border-border/10 flex items-center justify-center text-sm font-bold text-muted-foreground group-hover:text-cylon-red group-hover:border-cylon-red/50 transition-all duration-500 z-10">
+                    class="w-14 h-14 rounded-full bg-background border border-border flex items-center justify-center text-sm font-bold text-muted-foreground group-hover:text-cylon-red group-hover:border-cylon-red/50 transition-all duration-500 z-10">
                     {{ getInitials(m.name) }}
                   </div>
                 </div>
@@ -146,14 +146,14 @@ const getInitials = (name: string) => name.split(' ').map(n => n[0]).join('').to
                     </p>
                   </div>
 
-                  <div class="pt-4 border-t border-border/5 space-y-2">
+                  <div class="pt-4 border-t border-border space-y-2">
                     <a :href="`mailto:${m.email}`"
-                      class="flex items-center gap-3 text-xs text-muted-foreground hover:text-white transition-colors">
+                      class="flex items-center gap-3 text-xs text-muted-foreground hover:text-cylon-red transition-colors">
                       <Mail class="w-3 h-3" />
                       {{ m.email }}
                     </a>
                     <a :href="`tel:${m.phone}`"
-                      class="flex items-center gap-3 text-xs text-muted-foreground hover:text-white transition-colors">
+                      class="flex items-center gap-3 text-xs text-muted-foreground hover:text-cylon-red transition-colors">
                       <Phone class="w-3 h-3" />
                       {{ m.phone }}
                     </a>

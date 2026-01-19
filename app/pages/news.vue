@@ -19,9 +19,9 @@ const news = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div v-for="item in news" :key="item.title"
-          class="group glass-card p-10 rounded-3xl border-white/5 bg-surface/30 hover:border-cylon-red/30 transition-all duration-500 metallic-surface">
+          class="group glass-card p-10 rounded-3xl border-border bg-card/30 hover:border-cylon-red/30 transition-all duration-500 metallic-surface">
           <span class="text-[10px] uppercase tracking-[0.4em] font-bold text-cylon-red mb-4 block">{{ item.date
-            }}</span>
+          }}</span>
           <h3 class="text-2xl font-bold font-bangla mb-6 group-hover:text-cylon-red transition-colors">{{ item.title }}
           </h3>
           <p class="text-muted-foreground font-bangla-body font-light mb-8">বিস্তারিত পড়ার জন্য নিচে ক্লিক করুন...</p>

@@ -22,8 +22,7 @@ const members = [
         </div>
         <div class="flex gap-4">
           <!-- Modern Search Placeholder -->
-          <div
-            class="px-6 py-3 bg-surface/50 border border-white/5 rounded-full flex items-center gap-3 backdrop-blur-md">
+          <div class="px-6 py-3 bg-muted/50 border border-border rounded-full flex items-center gap-3 backdrop-blur-md">
             <div class="w-2 h-2 rounded-full bg-cylon-red animate-pulse" />
             <span class="text-xs uppercase tracking-widest text-muted-foreground font-bold font-sans">Search
               Members</span>
@@ -31,29 +30,29 @@ const members = [
         </div>
       </div>
 
-      <div class="glass-card rounded-3xl border-white/5 overflow-hidden metallic-surface">
+      <div class="glass-card rounded-3xl border-border overflow-hidden metallic-surface">
         <table class="w-full text-left border-collapse">
           <thead>
-            <tr class="border-b border-white/5 bg-white/5">
+            <tr class="border-b border-border bg-muted/5">
               <th class="px-8 py-6 text-xs uppercase tracking-[0.2em] font-bold text-muted-foreground">নাম</th>
               <th class="px-8 py-6 text-xs uppercase tracking-[0.2em] font-bold text-muted-foreground">পদবী</th>
               <th class="px-8 py-6 text-xs uppercase tracking-[0.2em] font-bold text-muted-foreground">সদস্য শুরু</th>
               <th class="px-8 py-6 text-xs uppercase tracking-[0.2em] font-bold text-muted-foreground">অ্যাকশন</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-white/5">
-            <tr v-for="member in members" :key="member.name" class="group hover:bg-white/5 transition-colors">
+          <tbody class="divide-y border-border">
+            <tr v-for="member in members" :key="member.name" class="group hover:bg-muted/5 transition-colors">
               <td class="px-8 py-6">
                 <div class="flex items-center gap-4">
                   <div
-                    class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-white/10 group-hover:border-cylon-red/50 transition-all font-bangla text-xl">
+                    class="w-10 h-10 rounded-lg bg-card flex items-center justify-center border border-border group-hover:border-cylon-red/50 transition-all font-bangla text-xl text-foreground">
                     {{ member.name[0] }}
                   </div>
-                  <span class="font-bangla text-lg">{{ member.name }}</span>
+                  <span class="font-bangla text-lg text-foreground">{{ member.name }}</span>
                 </div>
               </td>
-              <td class="px-8 py-6 font-bangla-body font-light">{{ member.role }}</td>
-              <td class="px-8 py-6 font-bangla-body font-light">{{ member.since }}</td>
+              <td class="px-8 py-6 font-bangla-body font-light text-foreground">{{ member.role }}</td>
+              <td class="px-8 py-6 font-bangla-body font-light text-foreground">{{ member.since }}</td>
               <td class="px-8 py-6">
                 <button
                   class="text-xs uppercase tracking-widest font-bold text-cylon-red hover:underline transition-all">Profile</button>

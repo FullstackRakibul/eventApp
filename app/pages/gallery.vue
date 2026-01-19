@@ -15,7 +15,7 @@ const { t } = useI18n()
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div v-for="i in 9" :key="i"
-          class="group relative aspect-video rounded-3xl overflow-hidden glass-card border-white/5 bg-surface/30 cursor-pointer">
+          class="group relative aspect-video rounded-3xl overflow-hidden glass-card border-border bg-card/30 cursor-pointer">
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
           <div

@@ -93,7 +93,7 @@ export default defineNuxtConfig({
           },
         },
       },
-     
+      darkMode: 'class',
     }
   },
 

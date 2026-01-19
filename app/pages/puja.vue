@@ -21,7 +21,7 @@ const schedule = [
 
       <div class="space-y-6">
         <div v-for="item in schedule" :key="item.day"
-          class="group glass-card p-10 rounded-2xl border-white/5 bg-surface/30 hover:border-cylon-red/30 transition-all duration-500 metallic-surface relative overflow-hidden">
+          class="group glass-card p-10 rounded-2xl border-border bg-card/30 hover:border-cylon-red/30 transition-all duration-500 metallic-surface relative overflow-hidden">
           <!-- Animated Scan Line -->
           <div
             class="absolute inset-0 bg-gradient-to-r from-transparent via-cylon-red/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />

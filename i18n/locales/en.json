@@ -11,12 +11,26 @@
     "members": "Members",
     "expenditure": "Expenditure",
     "faq": "FAQ",
-    "news": "News"
+    "news": "News",
+    "learnMore": "Learn More",
+    "getInTouch": "Get In Touch"
   },
   "home": {
+    "tagline": "A New Dimension of Tradition",
     "hero_title": "Cinematic Event Management",
     "hero_subtitle": "Experience the fusion of tradition and minimalism.",
+    "hero_description": "We transform your special moments into royal and memorable experiences through exceptional planning and creativity.",
     "cta_donate": "Donate Now",
-    "cta_learn_more": "Learn More"
+    "cta_learn_more": "Learn More",
+    "featured_label": "Our Featured Services",
+    "services": {
+      "title": "Our Specialized Services"
+    },
+    "why_choose": "Why Choose Us?",
+    "why_choose_desc": "We don’t just organize events; we are the guardians of your heritage.",
+    "testimonials": "Testimonials",
+    "testimonials_desc": "Stories of success from our clients",
+    "ready_to_celebrate": "Ready to Celebrate?",
+    "ready_desc": "Contact us today and transform your event into an unforgettable experience."
   }
 }

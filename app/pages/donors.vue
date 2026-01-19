@@ -19,7 +19,7 @@ const donors = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="donor in donors" :key="donor.name"
-          class="glass-card p-10 rounded-3xl border-white/5 metallic-surface text-center hover:border-cylon-red/30 transition-all duration-500">
+          class="glass-card p-10 rounded-3xl border-border metallic-surface text-center hover:border-cylon-red/30 transition-all duration-500">
           <div
             class="w-20 h-20 rounded-full bg-cylon-red/10 border border-cylon-red/30 flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl font-bangla text-cylon-red">{{ donor.name[0] }}</span>

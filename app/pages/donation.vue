@@ -15,18 +15,18 @@ const { t } = useI18n()
       </div>
 
       <div class="max-w-2xl mx-auto">
-        <div class="glass-card p-8 md:p-12 rounded-3xl border-white/5 bg-surface/30 backdrop-blur-2xl metallic-surface">
+        <div class="glass-card p-8 md:p-12 rounded-3xl border-border bg-card/30 backdrop-blur-2xl metallic-surface">
           <form class="space-y-6">
             <div class="space-y-2">
               <label class="text-xs uppercase tracking-widest text-muted-foreground font-bold">নাম</label>
               <input type="text"
-                class="w-full bg-deep-black/50 border border-white/5 rounded-lg px-4 py-4 focus:border-cylon-red/50 focus:ring-0 transition-all outline-none"
+                class="w-full bg-muted/50 border border-border rounded-lg px-4 py-4 focus:border-cylon-red/50 focus:ring-0 transition-all outline-none text-foreground"
                 placeholder="আপনার নাম লিখুন" />
             </div>
             <div class="space-y-2">
               <label class="text-xs uppercase tracking-widest text-muted-foreground font-bold">অ্যামাউন্ট</label>
               <input type="number"
-                class="w-full bg-deep-black/50 border border-white/5 rounded-lg px-4 py-4 focus:border-cylon-red/50 focus:ring-0 transition-all outline-none"
+                class="w-full bg-muted/50 border border-border rounded-lg px-4 py-4 focus:border-cylon-red/50 focus:ring-0 transition-all outline-none text-foreground"
                 placeholder="৳" />
             </div>
             <button

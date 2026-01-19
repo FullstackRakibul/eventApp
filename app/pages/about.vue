@@ -18,14 +18,16 @@ const { t } = useI18n()
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
-            <div class="glass-card p-8 rounded-2xl border-white/5 bg-surface/30">
-              <h3 class="text-white font-bold text-2xl mb-4">আমাদের লক্ষ্য</h3>
-              <p class="text-base">সাংস্কৃতিক ঐতিহ্যকে আধুনিক প্রজন্মের কাছে আকর্ষণীয় করে তোলা এবং উচ্চমানের ইভেন্ট
+            <div class="glass-card p-8 rounded-2xl border-border bg-card/30">
+              <h3 class="text-foreground font-bold text-2xl mb-4">আমাদের লক্ষ্য</h3>
+              <p class="text-base text-muted-foreground">সাংস্কৃতিক ঐতিহ্যকে আধুনিক প্রজন্মের কাছে আকর্ষণীয় করে তোলা
+                এবং উচ্চমানের ইভেন্ট
                 অভিজ্ঞতা প্রদান করা।</p>
             </div>
-            <div class="glass-card p-8 rounded-2xl border-white/5 bg-surface/30">
-              <h3 class="text-white font-bold text-2xl mb-4">আমাদের ভিশন</h3>
-              <p class="text-base">বাংলাদেশের ইভেন্ট শিল্পে প্রযুক্তির ব্যবহারে নেতৃত্ব দেওয়া এবং বিশ্বমানের সেবামূলক
+            <div class="glass-card p-8 rounded-2xl border-border bg-card/30">
+              <h3 class="text-foreground font-bold text-2xl mb-4">আমাদের ভিশন</h3>
+              <p class="text-base text-muted-foreground">বাংলাদেশের ইভেন্ট শিল্পে প্রযুক্তির ব্যবহারে নেতৃত্ব দেওয়া এবং
+                বিশ্বমানের সেবামূলক
                 প্রতিষ্ঠান হওয়া।</p>
             </div>
           </div>

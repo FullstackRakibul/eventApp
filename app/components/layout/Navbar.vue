@@ -35,7 +35,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 glass-dark border-b border-white/5">
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b" :class="[
+    isDark
+      ? 'bg-deep-black/80 backdrop-blur-lg border-white/5'
+      : 'bg-white/80 backdrop-blur-lg border-gray-200'
+  ]">
     <nav class="container mx-auto px-4 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
         <!-- Logo -->
@@ -52,8 +56,12 @@ onMounted(() => {
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center gap-2">
           <NuxtLink v-for="link in navLinks" :key="link.path" :to="link.path"
-            class="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/5 rounded-lg transition-all duration-300 font-bangla-body tracking-wider"
-            active-class="text-cylon-red bg-cylon-red/5">
+            class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 font-bangla-body tracking-wider"
+            :class="[
+              isDark
+                ? 'text-white/60 hover:text-white hover:bg-white/5'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+            ]" active-class="!text-cylon-red !bg-cylon-red/5">
             {{ link.label }}
           </NuxtLink>
         </div>
@@ -68,8 +76,11 @@ onMounted(() => {
           </button>
 
           <!-- Theme Toggle -->
-          <button @click="toggleTheme"
-            class="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-white/10 transition-all duration-300">
+          <button @click="toggleTheme" class="p-2 rounded-lg transition-all duration-300" :class="[
+            isDark
+              ? 'text-white/60 hover:text-white hover:bg-white/10'
+              : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+          ]">
             <Sun v-if="isDark" class="w-5 h-5" />
             <Moon v-else class="w-5 h-5" />
           </button>

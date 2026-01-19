@@ -18,17 +18,17 @@ const faqs = [
       </div>
 
       <div class="max-w-3xl space-y-4">
-        <div v-for="(faq, i) in faqs" :key="i"
-          class="glass-card rounded-2xl border-white/5 bg-surface/30 overflow-hidden">
+        <div v-for="(faq, i) in faqs" :key="i" class="glass-card rounded-2xl border-border bg-card/30 overflow-hidden">
           <details class="group">
             <summary class="flex justify-between items-center p-8 cursor-pointer list-none">
-              <span class="text-xl font-bangla font-bold group-open:text-cylon-red transition-colors">{{ faq.q }}</span>
+              <span class="text-xl font-bangla font-bold group-open:text-cylon-red transition-colors text-foreground">{{
+                faq.q }}</span>
               <div
-                class="w-6 h-6 border-2 border-white/10 rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
-                <div class="w-2 h-0.5 bg-white" />
+                class="w-6 h-6 border-2 border-border rounded-full flex items-center justify-center group-open:rotate-180 transition-transform">
+                <div class="w-2 h-0.5 bg-foreground" />
               </div>
             </summary>
-            <div class="px-8 pb-8 text-muted-foreground font-bangla-body leading-relaxed border-t border-white/5 pt-6">
+            <div class="px-8 pb-8 text-muted-foreground font-bangla-body leading-relaxed border-t border-border pt-6">
               {{ faq.a }}
             </div>
           </details>
